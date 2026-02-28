@@ -81,7 +81,7 @@ button {
     align-items: center;
 }
 
-.menu li:hover {
+.menu a:hover {
     text-decoration: underline;
 }
 
@@ -278,6 +278,10 @@ button {
 
 .footer-link-title {
     font-size: 10px;
+}
+
+.footer-link-title:hover {
+    color: var(--color-secondary-footer);
 }
 
 .footer-link {
