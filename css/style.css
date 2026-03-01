@@ -7,6 +7,7 @@
     --color-secondary-footer: #7E7E7E;
     --color-search-bg: #F5F5F5;
     --color-search-text: #CCCCCC;
+    --color-sale: #9E3500;
 }
 
 * {
@@ -67,6 +68,16 @@ button {
     width: 100%;
 }
 
+.grid-two-col{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.shop-grid{
+    column-gap: 16px;
+    row-gap: 60px;
+}
+
 .fw-500 {
     font-weight: 500;
 }
@@ -81,7 +92,8 @@ button {
     align-items: center;
 }
 
-.menu a:hover {
+.menu a:hover,
+.sidebar a:hover {
     text-decoration: underline;
 }
 
@@ -213,10 +225,10 @@ button {
 .section-title {
     text-align: center;
     line-height: 28px;
-    padding-bottom: 24px;
 }
 
 .product-card {
+    padding-top: 24px;
     width: 100%;
     transition: .3s ease;
 }
@@ -228,6 +240,11 @@ button {
 .product-card-content {
     display: flex;
     justify-content: space-between;
+    gap: 19px;
+}
+
+.product-card-title{
+    color: var(--color-sale);
 }
 
 .product-card-name,
@@ -239,11 +256,16 @@ button {
     color: var(--color-secondary);
 }
 
+.shop-card{
+    max-width: 348px;
+}
+
 .essentials {
     padding-bottom: 64px;
 }
 
 .essentials-card {
+    padding-top: 24px;
     position: relative;
     width: 100%;
 }
@@ -305,6 +327,15 @@ button {
     border-radius: 50%;
 }
 
+.sidebar{
+    max-width: 208px;
+}
+
+.sidemenu-category{
+    line-height: 22px;
+    gap: 10px;
+}
+
 @media (min-width: 768px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
@@ -330,6 +361,11 @@ button {
 
     .section-title {
         text-align: left;
+        padding-bottom: 24px;
+    }
+
+    .product-card{
+        padding: 0;
     }
 
     .footer-container {
