@@ -1,11 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Nike - Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon.png">
 </head>
+
 <body>
-    
+    <header>
+        <div class="container">
+            <nav class="nav-content">
+                <div class="logo">
+                    <a href="../index.html"><img src="../images/icon-logo.svg" alt="Nike" width="59" height="28"></a>
+                </div>
+                <ul class="menu fw-500 flex-column">
+                    <li><a href="#">New & Featured</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">SNKRS</a></li>
+                </ul>
+                <div class="nav-right flex-column">
+                    <form class="search">
+                        <label for="search" hidden>Search</label>
+                        <img src="../images/icon-search.svg" alt="search" width="17" height="17">
+                        <input type="search" id="search" placeholder="Search">
+                    </form>
+                    <div class="icons">
+                        <a href="#"><img src="../images/icon-favourites.svg" alt="Favourites" width="24"
+                                height="24"></a>
+                        <a href="#"><img src="../images/icon-cart.svg" alt="Cart" width="24" height="24"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content signin-padding">
+        <div class="container flex-column">
+            <form class="form-signup flex-column center">
+                <div class="form-header flex-column">
+                    <img src="../images/icon-logo.svg" alt="Nike Logo"  width="324" height="17">
+                    <h2 class="form-title fw-500">YOUR ACCOUNT FOR EVERYTHING NIKE</h2>
+                </div>
+                <div class="form-body flex-column">
+                    <div class="form-email-pass flex-column">
+                        <div class="form-group flex-column">
+                            <label for="email" hidden>Email address</label>
+                            <input type="email" id="email" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group flex-column">
+                            <label for="password" hidden>Password</label>
+                            <input type="password" id="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="form-options flex-row">
+                        <div class="checkbox-group flex-row">
+                            <input type="checkbox" id="keepsign" name="keepsign">
+                            <label for="keepsign">Keep me signed in</label>
+                        </div>
+                        <a href="#" class="forgot-link">Forgotten your password?</a>
+                    </div>
+                    <div class="form-policy flex-row">
+                        <p>By logging in, you agree to Nike's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a></p>
+                    </div>
+                    <button type="submit" class="btn btn-signin">SIGN IN</button>
+                    <div class="form-footer flex-column">
+                        <p>Not a Member? <a href="#">Join Us</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer-content">
+        <div class="container footer-container flex-column">
+            <div class="footer-columns flex-column">
+                <div class="footer-col">
+                    <ul class="footer-list flex-column">
+                        <li>
+                            <h3><a class="footer-link-title" href="#">FIND A STORE</a></h3>
+                        </li>
+                        <li>
+                            <h3><a class="footer-link-title" href="#">BECOME A MEMBER</a></h3>
+                        </li>
+                        <li>
+                            <h3><a class="footer-link-title" href="#">SIGN UP FOR EMAIL</a></h3>
+                        </li>
+                        <li>
+                            <h3><a class="footer-link-title" href="#">SEND US FEEDBACK</a></h3>
+                        </li>
+                        <li>
+                            <h3><a class="footer-link-title" href="#">STUDENT DISCOUNTS</a></h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-list flex-column">
+                        <li>
+                            <h3><a class="footer-link-title" href="#">GET HELP</a></h3>
+                        </li>
+                        <li><a class="footer-link" href="#">Order Status</a></li>
+                        <li><a class="footer-link" href="#">Delivery</a></li>
+                        <li><a class="footer-link" href="#">Returns</a></li>
+                        <li><a class="footer-link" href="#">Payment Options</a></li>
+                        <li><a class="footer-link" href="#">Contact Us On Nike.com Inquiries</a></li>
+                        <li><a class="footer-link" href="#">Contact Us On All Other Inquiries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer-list flex-column">
+                        <li>
+                            <h3><a class="footer-link-title" href="#">ABOUT NIKE</a></h3>
+                        </li>
+                        <li><a class="footer-link" href="#">News</a></li>
+                        <li><a class="footer-link" href="#">Careers</a></li>
+                        <li><a class="footer-link" href="#">Investors</a></li>
+                        <li><a class="footer-link" href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><img class="social-link" src="../images/icon-twitter.svg" alt="Twitter" width="30"
+                        height="30"></a>
+                <a href="#"><img class="social-link" src="../images/icon-facebook.svg" alt="Facebook" width="30"
+                        height="30"></a>
+                <a href="#"><img class="social-link" src="../images/icon-youtube.svg" alt="YouTube" width="30"
+                        height="30"></a>
+                <a href="#"><img class="social-link" src="../images/icon-instagram.svg" alt="Instagram" width="30"
+                        height="30"></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
